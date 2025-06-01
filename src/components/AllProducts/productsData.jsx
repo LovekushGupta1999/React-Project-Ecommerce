@@ -1,0 +1,57 @@
+const products = [
+  {
+    id: 1,
+    name: "Nike Running Shoes",
+    gender: "Men",
+    category: "Shoes",
+    price: 120,
+    brand: "Nike",
+    image:"nikeshoes.jpeg" },
+  {
+    id: 2,
+    name: "Adidas Hoodie",
+    gender: "Women",
+    category: "Clothing",
+    price: 80,
+    brand: "Adidas",
+    image: "hoodies1.jpeg",
+  },
+  {
+    id: 3,
+    name: "Puma Sneakers",
+    gender: "Men",
+    category: "Shoes",
+    price: 90,
+    brand: "Puma",
+    image: "puma.jpeg",
+  },
+  {
+    id: 4,
+    name: "Under Armour Shorts",
+    gender: "Men",
+    category: "Clothing",
+    price: 65,
+    brand: "Under Armour",
+    image: "shorts.jpeg",
+  },
+    {
+    id: 5,
+    name: "Adidas Hoodie",
+    gender: "Men",
+    category: "Clothing",
+    price: 40,
+    brand: "Adidas",
+    image: "hoodies.jpeg",
+  },
+  {
+    id: 6,
+    name: "Under Armour Shorts",
+    gender: "Women",
+    category: "Clothing",
+    price: 45,
+    brand: "Under Armour",
+    image: "shorts1.jpeg",
+  },
+];
+
+export default products;
