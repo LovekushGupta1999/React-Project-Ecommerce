@@ -7,6 +7,7 @@ import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 import { FiShoppingBag } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { FaHeart } from "react-icons/fa6";
 
 const Menu = [
   {
@@ -54,7 +55,7 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = ({ handleOrderPopup }) => {
+const Navbar = () => {
   return (
     <div className="shadow-md bg-white dark:bg-slate-800 dark:text-white duration-200 relative z-40">
       {/* upper Navbar */}
@@ -68,7 +69,7 @@ const Navbar = ({ handleOrderPopup }) => {
           </div>
 
           {/* search bar */}
-          <div className="flex justify-between items-center gap-4">
+          <div className="flex justify-between items-center gap-1 sm:gap-4">
             <div className="relative group hidden sm:block">
               <input
                 type="text"
@@ -83,7 +84,7 @@ const Navbar = ({ handleOrderPopup }) => {
             <Link to="/cart" className="text-white ">
             <button
              
-              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-2 rounded-full flex items-center gap-3 group hidden sm:block px-4"
             >
               <span className="group-hover:block hidden transition-all duration-200">
                
@@ -96,18 +97,31 @@ const Navbar = ({ handleOrderPopup }) => {
             <Link to="/login">
             <button
             
-              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-2 group"
             > 
               <span className="group-hover:block hidden transition-all duration-200">
              Login
               </span>
               <FaUser className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button></Link>
+
+            {/* wishlist button  */}
+            <Link to="/wishlist">
+             
+            <button
+            
+              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group hidden sm:block"
+            > 
+              <span className="block transition-all duration-200">
+             
+              <FaHeart className="text-xl text-white drop-shadow-sm cursor-pointer" />
+              </span>
+            </button></Link>
           
           {/* user register button  */}
             <button
               
-              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+              className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-0.5 px-2 rounded-full flex items-center gap-3 group sm:px-3"
             >
               <span className="block transition-all duration-200">
               <Link to="/register">Register</Link>

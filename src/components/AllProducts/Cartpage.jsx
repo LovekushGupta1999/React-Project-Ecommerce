@@ -24,7 +24,7 @@ const CartPage = () => {
       ) : (
         <>
           <div className="space-y-6">
-            {cartItems.carts.map((item, index) => (
+            {cartItems.carts.map((item) => (
               <div
                 key={item.id}
                 className="flex flex-col sm:flex-row items-center gap-4 border p-4 rounded"

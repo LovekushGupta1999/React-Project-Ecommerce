@@ -3,6 +3,7 @@ import Image1 from "../../assets/hero/women.png";
 import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const ImageList = [
   {
@@ -28,7 +29,7 @@ const ImageList = [
   },
 ];
 
-const Hero = ({ handleOrderPopup }) => {
+const Hero = () => {
   var settings = {
     dots: false,
     arrows: false,
@@ -76,10 +77,10 @@ const Hero = ({ handleOrderPopup }) => {
                     data-aos-delay="300"
                   >
                     <button
-                      onClick={handleOrderPopup}
-                      className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
+                    
+                      className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 mx-2 rounded-full"
                     >
-                      Order Now
+                      <Link to="/AllProducts">Order Now</Link>
                     </button>
                   </div>
                 </div>

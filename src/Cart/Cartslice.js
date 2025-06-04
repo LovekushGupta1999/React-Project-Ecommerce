@@ -21,16 +21,18 @@ export const cartSlice = createSlice({
             state.totalItems += 1;
         },
         
-        removeFromCart: (state, action) => {
-            const index = state.carts.findIndex((item) => item.id === action.payload.id);
-            state.carts = state.carts.filter((item) => item.id !== action.payload.id);
-            if (index != -1) {
-                const item = state.carts[index];
-                state.total -= item.price * item.quantity;
-                state.totalItems -= item.quantity;
-                // state.carts.splice(index, 1);
-            }
-        },
+      
+            removeFromCart: (state, action) => {
+    //     const index = state.carts.findIndex((item) => item.id === action.payload.id);
+        //     if (index != -1) {
+        //         const item = state.carts[index];
+        //         state.total -= item.price * item.quantity;
+        //         state.totalItems -= item.quantity;
+            // }
+      const id = action.payload;
+      state.carts = state.carts.filter(item => item.id !== id);
+    },
+
      increaseQuantity: (state, action) => {
       const item = state.carts.find(i => i.id === action.payload);
       if (item) {
@@ -45,7 +47,7 @@ export const cartSlice = createSlice({
         state.carts = state.carts.filter(i => i.id !== action.payload);
         state.total -= item.price;
       }
-      if (item && item.quantity>1 ) item.quantity -= 1;
+      if (item && item.quantity> 1) item.quantity -= 1;
       state.total -= item.price * 1;
             state.totalItems -= 1;
     },

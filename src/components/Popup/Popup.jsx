@@ -1,5 +1,6 @@
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Popup = ({ orderPopup, setOrderPopup }) => {
   return (
@@ -11,7 +12,7 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
               {/* header */}
               <div className="flex items-center justify-between">
                 <div>
-                  <h1>Order Now</h1>
+                  <h1>Added Successfully</h1>
                 </div>
                 <div>
                   <IoCloseOutline
@@ -22,7 +23,7 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
               </div>
               {/* form section */}
               <div className="mt-4">
-                <input
+                {/* <input
                   type="text"
                   placeholder="Name"
                   className=" w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
@@ -36,11 +37,14 @@ const Popup = ({ orderPopup, setOrderPopup }) => {
                   type="text"
                   placeholder="Address"
                   className=" w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4"
-                />
+                /> */}
                 <div className="flex justify-center">
-                  <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
-                    Order Now
+                   <Link to="/cart" className="text-white ">
+                  
+                  <button  onClick={() => setOrderPopup(false)} className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-1 px-4 rounded-full ">
+                   View Cart
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

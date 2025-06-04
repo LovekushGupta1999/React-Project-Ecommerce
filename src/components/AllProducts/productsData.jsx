@@ -6,7 +6,8 @@ const products = [
     category: "Shoes",
     price: 120,
     brand: "Nike",
-    image:"nikeshoes.jpeg" },
+    discription: "High-performance running shoes designed for comfort and speed.  Featuring lightweight materials and advanced cushioning technology for a smooth ride. Perfect for both casual runners and serious athletes.",
+    image:"/nikeshoes.jpeg" },
   {
     id: 2,
     name: "Adidas Hoodie",
@@ -14,7 +15,8 @@ const products = [
     category: "Clothing",
     price: 80,
     brand: "Adidas",
-    image: "hoodies1.jpeg",
+    discription: "Stylish and comfortable hoodie perfect for casual wear. Made with soft, breathable fabric to keep you cozy. Available in various sizes and colors.",
+    image: "/hoodies1.jpeg",
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ const products = [
     category: "Shoes",
     price: 90,
     brand: "Puma",
-    image: "puma.jpeg",
+    discription: "Trendy sneakers with excellent cushioning and support.  Ideal for everyday wear or workouts. Available in various sizes and colors.",
+    image: '/puma.jpeg',
   },
   {
     id: 4,
@@ -32,7 +35,8 @@ const products = [
     category: "Clothing",
     price: 65,
     brand: "Under Armour",
-    image: "shorts.jpeg",
+    discription: "Lightweight and breathable shorts for active wear. Perfect for workouts or casual outings. Available in various sizes and colors.",
+    image: "/shorts.jpeg",
   },
     {
     id: 5,
@@ -41,7 +45,8 @@ const products = [
     category: "Clothing",
     price: 40,
     brand: "Adidas",
-    image: "hoodies.jpeg",
+    discription: "Comfortable and stylish hoodie for everyday wear, Perfect for layering or casual outings. available in various sizes and colors.",
+    image: "/hoodies.jpeg",
   },
   {
     id: 6,
@@ -50,8 +55,11 @@ const products = [
     category: "Clothing",
     price: 45,
     brand: "Under Armour",
-    image: "shorts1.jpeg",
+    discription: "Durable and lightweight shorts for workouts. Ideal for running, training, or casual outings. Made with moisture-wicking fabric to keep you dry and comfortable.",
+    image: "/shorts1.jpeg",
   },
+   
+
 ];
 
 export default products;

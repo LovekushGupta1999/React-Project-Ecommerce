@@ -43,7 +43,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <Hero handleOrderPopup={handleOrderPopup} />
+              <Hero  />
               <Products />
               <TopProducts handleOrderPopup={handleOrderPopup} />
               <Banner />
@@ -54,9 +54,9 @@ const App = () => {
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/allproducts" element={<AllProducts />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-           <Route path="/cart" element={<CartPage  />} />
-           <Route path="/wishlist" element={<WishlistPage />} />
+          <Route path="/product/:id" element={<ProductDetail  handleOrderPopup={handleOrderPopup} />} />
+          <Route path="/cart" element={<CartPage  />} />
+          <Route path="/wishlist" element={<WishlistPage />} />
 
    
         </Routes>
