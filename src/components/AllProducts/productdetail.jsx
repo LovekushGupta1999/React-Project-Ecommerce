@@ -20,7 +20,7 @@ const ProductDetail = ({ handleOrderPopup }) => {
     if (isWishlisted) {
       dispatch(removeFromWishlist(product.id));
     } else {
-      dispatch(addToWishlist(product));
+      dispatch(addToWishlist({ ...product, size: selectedSize }));
     }
   };
 

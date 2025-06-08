@@ -34,6 +34,8 @@ const WishlistPage = () => {
                   <br />
                   <strong>Brand:</strong> {item.brand}
                   <br />
+                  <strong>Brand:</strong> {item.size}
+                  <br />
                   <strong>Price:</strong> ${item.price}
                 </p>
               </div>

@@ -18,17 +18,17 @@ const Menu = [
   {
     id: 2,
     name: "Top Rated",
-    link: "/#services",
+    link: "/AllProducts",
   },
   {
     id: 3,
-    name: "Kids Wear",
-    link: "/#",
+    name: "Womens Wear",
+    link: "/AllProducts",
   },
   {
     id: 3,
     name: "Mens Wear",
-    link: "/#",
+    link: "/AllProducts",
   },
   {
     id: 3,
@@ -41,17 +41,17 @@ const DropdownLinks = [
   {
     id: 1,
     name: "Trending Products",
-    link: "/#",
+    link: "/AllProducts",
   },
   {
     id: 2,
     name: "Best Selling",
-    link: "/#",
+    link: "/AllProducts",
   },
   {
     id: 3,
     name: "Top Rated",
-    link: "/#",
+    link: "/AllProducts",
   },
 ];
 
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div>
             <a href="#" className="font-bold text-xl items-center flex gap-1">
               <FiShoppingBag size="30" />
-              ShopMe
+              ShopTrends
             </a>
           </div>
 
@@ -87,8 +87,7 @@ const Navbar = () => {
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-2 rounded-full flex items-center gap-3 group hidden sm:block px-4"
             >
               <span className="group-hover:block hidden transition-all duration-200">
-               
-               Cart
+              
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>

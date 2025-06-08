@@ -48,8 +48,50 @@ const products = [
     discription: "Comfortable and stylish hoodie for everyday wear, Perfect for layering or casual outings. available in various sizes and colors.",
     image: "/hoodies.jpeg",
   },
-  {
+  
+   
+{
     id: 6,
+    name: "Reebok Training Shoes",
+    gender: "Unisex",
+    category: "Shoes",
+    price: 85,
+    brand: "Reebok",
+    description: "Durable training shoes ideal for gym sessions and cross-training. Lightweight with excellent grip and comfort.",
+    image: "/download.webp",
+  },
+  {
+    id: 7,
+    name: "Converse Chuck Taylor",
+    gender: "Unisex",
+    category: "Shoes",
+    price: 65,
+    brand: "Converse",
+    description: "Timeless canvas sneakers known for their iconic look and versatility. Great for everyday casual wear.",
+    image: "/image1.webp",
+  },
+  {
+    id: 8,
+    name: "New Balance 574",
+    gender: "Men",
+    category: "Shoes",
+    price: 100,
+    brand: "New Balance",
+    description: "Retro-inspired running shoes with ENCAP midsole cushioning for all-day comfort and style.",
+    image: "/OIP.webp",
+  },
+  {
+    id: 9,
+    name: "Skechers Go Walk",
+    gender: "Women",
+    category: "Shoes",
+    price: 70,
+    brand: "Skechers",
+    description: "Ultra-light slip-on walking shoes featuring high-rebound cushioning and breathable materials. Ideal for travel and daily wear.",
+    image: "/OIP (1).webp",
+  },
+  {
+    id: 10,
     name: "Under Armour Shorts",
     gender: "Women",
     category: "Clothing",
@@ -58,8 +100,6 @@ const products = [
     discription: "Durable and lightweight shorts for workouts. Ideal for running, training, or casual outings. Made with moisture-wicking fabric to keep you dry and comfortable.",
     image: "/shorts1.jpeg",
   },
-   
-
 ];
 
 export default products;

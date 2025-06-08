@@ -36,9 +36,11 @@ const RegistrationForm = () => {
     if (!formData.username) tempErrors.username = 'Username is required';
     if (!formData.email) {
       tempErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      tempErrors.email = 'Email is invalid';
-    }
+    } 
+ else if (!formData.email.includes("@") || !formData.email.includes(".") || formData.email.includes("@.") || formData.email.includes(".@")) {
+  tempErrors.email = "Email is invalid";
+}
+
     if (!formData.password) {
       tempErrors.password = 'Password is required';
     } else if (formData.password.length < 6) {
